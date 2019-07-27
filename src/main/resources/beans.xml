@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+
+    <bean id="actor" class="com.stackroute.domain.Actor">
+        <constructor-arg name="name" value="Hritik"></constructor-arg>
+        <constructor-arg name="age" value="42"></constructor-arg>
+        <constructor-arg name="gender" value="Male"></constructor-arg>
+    </bean>
+
+    <bean id="movie" class="com.stackroute.domain.Movie">
+        <constructor-arg index="0" ref="actor"></constructor-arg>
+    </bean>
+</beans>
