@@ -36,8 +36,9 @@
         <constructor-arg type="String" value="Male"></constructor-arg>
     </bean>
 
-    <bean id="movie1" class="com.stackroute.domain.Movie">
+    <bean name="movie1" class="com.stackroute.domain.Movie" scope="prototype">
         <constructor-arg index="0" ref="actor3"></constructor-arg>
     </bean>
+
 
 </beans>

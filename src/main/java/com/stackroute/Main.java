@@ -43,7 +43,10 @@ public class Main {
         Movie movie2 = context4.getBean("movie1", Movie.class);
         System.out.println(movie2);
 
-        System.out.println(movie==movie2);
+        Movie movie3 = context4.getBean("movie1", Movie.class);
+        System.out.println(movie3);
+
+        System.out.println(movie3==movie2);
 
     }
 }
