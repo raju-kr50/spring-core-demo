@@ -1,10 +1,12 @@
 package com.stackroute;
 
+import com.stackroute.demo.BeanLifecycleDemoBean;
 import com.stackroute.domain.Actor;
 import com.stackroute.domain.Movie;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 
@@ -47,6 +49,11 @@ public class Main {
         System.out.println(movie3);
 
         System.out.println(movie3==movie2);
+
+        ConfigurableApplicationContext context5 = new ClassPathXmlApplicationContext("beans.xml");
+        BeanLifecycleDemoBean beanLifecycleDemoBean = context5.getBean("beanLifecycleDemoBean", BeanLifecycleDemoBean.class);
+        System.out.println(context5);
+
 
     }
 }

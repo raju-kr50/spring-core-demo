@@ -45,5 +45,9 @@ Exception in thread "main" org.springframework.beans.factory.UnsatisfiedDependen
         <constructor-arg index="0" ref="actor3"></constructor-arg>
     </bean>
 
+    <bean id="beanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
+
+
+    </bean>
 
 </beans>
