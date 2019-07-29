@@ -1,6 +1,7 @@
 package com.stackroute;
 
 import com.stackroute.demo.BeanLifecycleDemoBean;
+import com.stackroute.demo.BeanPostProcessorDemoBean;
 import com.stackroute.domain.Actor;
 import com.stackroute.domain.Movie;
 import org.springframework.beans.factory.BeanFactory;
@@ -54,6 +55,8 @@ public class Main {
         BeanLifecycleDemoBean beanLifecycleDemoBean = context5.getBean("beanLifecycleDemoBean", BeanLifecycleDemoBean.class);
         System.out.println(context5);
 
+        BeanPostProcessorDemoBean beanPostProcessorDemoBean = context5.getBean("beanPostProcessorDemo", BeanPostProcessorDemoBean.class);
+        System.out.println(beanLifecycleDemoBean);
 
     }
 }

@@ -47,7 +47,8 @@ Exception in thread "main" org.springframework.beans.factory.UnsatisfiedDependen
 
     <bean id="beanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
 
-
     </bean>
+
+    <bean id="beanPostProcessorDemo" class="com.stackroute.demo.BeanPostProcessorDemoBean"></bean>
 
 </beans>
